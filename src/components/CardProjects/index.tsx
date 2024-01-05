@@ -16,7 +16,7 @@ export const CardProject = ({children, title, tec, code, deploy}:cardProject) =>
         <div className="w-full flex flex-col gap-2 md:w-5/12 border-b border-gray-600 justify-between">
             <div>
                 <h3 className=" font-bold text-2xl">{title}</h3>
-                <div>
+                <div className=" py-2">
                     <p>linguagem: <span className="bg-primary-200 rounded p-1">{tec}</span></p>
                 </div>
                 {children}

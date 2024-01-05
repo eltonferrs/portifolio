@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import project from "../../public/header-bg.png"
 import { Header } from '@/components/Header';
 import { TecIcons } from '@/components/TechIcons';
 import { BsGithub } from "react-icons/bs";
@@ -9,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io";
 import { Footer } from '@/components/Footer';
-
+import { About } from '@/components/About';
 
 
 
@@ -25,14 +23,14 @@ export default function Home() {
               src="/perfil.jpg"
               alt="my photo perfil"
             />
-            <p className='text-l font-bold'>Hello, my name is Elton</p>
+            <p className='text-l font-bold'>Ola, meu nome é Elton</p>
           </div>
           <div className=" w-full lg:w-2/5">
-            <h1 className='text-4xl font-bold py-8'>I <span className='text-primary-200'>Love</span> creating and <span className='text-primary-200'>developing</span> projects</h1>
-            <p className="text">Discover here in this environment, created especially for you, all my projects and technologies</p>
+            <h1 className='text-4xl font-bold py-8'>Eu <span className='text-primary-200'>amo</span> criar e <span className='text-primary-200'>desenvolver</span> projetos</h1>
+            <p className="text">Apaixonado desde criança por ciências exatas, comecei a estudar desenvolvimento web com o desejo de entender e criar minhas próprias aplicações.</p>
           </div>
-          <div className="flex w-full items-center lg:w-2/5">
-            <button className='p-4 bg-primary-200 rounded-md'>See Projects</button>
+          <div className="flex w-full gap-3 items-center lg:w-2/5">
+            <a className='p-4 bg-primary-200 rounded-md hover:scale-125 ease-out  duration-300' href="https://github.com/eltonferrs" target='_blank'>See Projects</a>
             <BsGithub size={"3rem"}/>
           </div>
           <TecIcons/>
@@ -42,7 +40,7 @@ export default function Home() {
         <div className="w-full flex flex-col items-start gap-y-5">
           <div className=" w-full lg:w-2/5">
             <h2 className='text-4xl font-bold py-8'>My projects</h2>
-            <p className="text">Projects created at <span className=" text-primary-500">Kenzie Academy</span></p>
+            <p className="text">Alguns projetos criados junto ao curso da <span className=" text-primary-500">Kenzie Academy</span></p>
           </div>
           <div className="flex items-center gap-1 w-full flex-col md:flex-row md:flex-wrap md:justify-between md:items-stretch">
             <CardProject title='Shorts Summary' tec='JavaScript'
@@ -68,20 +66,22 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <About/>
       <section id='contact' className="w-9/12 flex flex-col min-h-[83vh] items-center sm:p-16 lg:pe-0 lg:min-h-[75vh]">
         <div className="w-full flex flex-col items-center h-full lg:justify-between lg:flex-row lg:items-center">
           <div className=" w-full lg:w-2/5">
-            <h2 className='text-4xl font-bold py-8'>Let's set up a conversation and <span className='text-primary-200'>develop our creativity</span> together?</h2>
-            <p className="text">Advertise your brand organically within Dribbble's design inspiration feed.</p>
+            <h2 className='text-4xl font-bold py-8'>
+Vamos marcar uma conversa e <span className='text-primary-200'>desenvolver nossa criatividade</span> juntos?</h2>
+            
           </div>
           <div className="flex w-full flex-col lg:w-3/5 lg:items-end">
-            <CardContact href='https://wa.me/5585981597573' text="I'm available for a voice chat, let's about creativity together?" title={'My phone'}>
+            <CardContact href='https://wa.me/5585981597573' text="Estou disponível para um chat de voz, vamos juntos falar de criatividade?" title={'Meu Número'}>
               <FaWhatsapp className="bg-primary-400 p-3 rounded my-3 hover:p-1 ease-out  duration-300 " size={"4rem"} />
             </CardContact>
-            <CardContact href='mailto:eltonferreira9728@gmail.com' text='Send me an email reporting feedbacks, suggestions and ideas' title={'My email'}>
+            <CardContact href='mailto:eltonferreira9728@gmail.com' text='Envie-me um e-mail relatando feedbacks, sugestões e ideias' title={'Meu email'}>
               <MdEmail className="bg-primary-500 p-3 rounded my-3 hover:p-1 ease-out duration-300" size={"4rem"}/>
             </CardContact>
-            <CardContact href='https://www.linkedin.com/in/elton-ferreira-141435216/' text='We can create more constant interactions as well as a sharing network' title={'My email'}>
+            <CardContact href='https://www.linkedin.com/in/elton-ferreira-141435216/' text='Podemos criar interações mais constantes e também uma rede de compartilhamento' title={'Meu linkdin'}>
               <IoLogoLinkedin className="bg-primary-100 p-3 rounded my-3 hover:p-1  ease-out duration-300" size={"4rem"}/>
             </CardContact>
           </div>

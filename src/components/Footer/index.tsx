@@ -12,8 +12,8 @@ export const Footer = () => {
                     alt="my photo perfil"
                     />
                     <div className="flex flex-col items-center md:items-start">
-                        <h2 className='text-xl font-bold py-4'>Thank you!</h2>
-                        <p className="text-gray-400 text-center text-base font-normal leading-7">Follow me on my social networks and let's talk</p>
+                        <h2 className='text-xl font-bold py-4'>Muito Obrigado!</h2>
+                        <p className="text-gray-400 text-center text-base font-normal leading-7">Me siga nas minhas redes sociais e vamos conversar</p>
                     </div>
                 </div>
                 <div className="flex gap-4">
