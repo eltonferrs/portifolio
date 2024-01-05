@@ -1,14 +1,29 @@
-export const CardProject = () => {
+import { ReactNode } from "react"
+import { BsGithub } from "react-icons/bs";
+import { IoArrowRedo } from "react-icons/io5";
+
+
+interface cardProject{
+    children: ReactNode;
+    title: string;
+    tec: string;
+    code: string;
+    deploy: string;
+}
+
+export const CardProject = ({children, title, tec, code, deploy}:cardProject) => {
     return(
-        <div className="w-full flex flex-col md:w-9/12">
-            <h1>Projeto 1</h1>
+        <div className="w-full flex flex-col gap-2 md:w-5/12 border-b border-gray-600 justify-between">
             <div>
-                <p>linguagem:</p>
+                <h3 className=" font-bold text-2xl">{title}</h3>
+                <div>
+                    <p>linguagem: <span className="bg-primary-200 rounded p-1">{tec}</span></p>
+                </div>
+                {children}
             </div>
-            <p>Descrição do projeto contendo as informações sobre finalidade da aplicação e como está organizado o repositório...</p>
-            <div className="flex w-9/12 flex-row items-center justify-between font-mono text-sm my-5 ">
-                <button>GitHub Code</button>
-                <button>Aplicação</button>
+            <div className="flex w-full flex-row items-center justify-between font-mono text-sm my-5 ">
+                <button><a className="flex items-center gap-2 hover:scale-125 ease-out duration-300" href={code} target="_blank"><BsGithub size={"1.5rem"}/> GitHub Code</a></button>
+                <button><a className="flex items-center gap-2 hover:scale-125 ease-out duration-300" href={deploy} target="_blank"><IoArrowRedo size={"1.5rem"}/> Aplicação</a></button>
             </div>
         </div>
     )

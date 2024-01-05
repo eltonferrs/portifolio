@@ -7,6 +7,6 @@
     @apply bg-gray-200 text-gray-500 
   }
   .text{
-    @apply text-gray-400 text-base font-normal leading-7
+    @apply text-gray-400 text-base font-normal leading-7 text-justify
   }
 }
