@@ -59,7 +59,7 @@ export default function Home() {
               <p className='text'>A aplicação foi desenvolvida com o intuito de garantir eficiência, segurança e uma ótima experiência do usuário. A escolha do React, complementado pelo TypeScript, proporcionou um desenvolvimento mais seguro e escalável. TypeScript trouxe a vantagem da tipagem estática, aumentando a confiabilidade do código e facilitando a manutenção.</p>
             </CardProject>
             <CardProject title='ClientAgender-API' tec='TypeScript'
-            code='https://github.com/eltonferrs/clientAgender-front'
+            code='https://github.com/eltonferrs/clientAgender-back'
             deploy='https://fullstack-kenzie-front-eltonferrs.vercel.app/'>
               <p className='text'>backend da aplicação ClientAgender - Um agenda web para seus contatos! O objetivo dessa aplicação é demonstrar conhecimento em tecnologias backend, organização de código e fornecer dados para criação de interfaces.</p>
             </CardProject>
